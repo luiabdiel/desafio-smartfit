@@ -1,0 +1,108 @@
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 80%;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 24px;
+  border: 3px solid var(--light-text);
+  border-radius: 8px;
+
+  .form-icon {
+    font-size: 14px;
+    color: var(--light-grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--medium-text);
+
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  .radio-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 8px 4px;
+    border-top: 1px solid var(--light-text);
+
+    color: var(--medium-text);
+
+    position: relative;
+
+    span {
+      position: absolute;
+      right: 0;
+    }
+
+    &:nth-last-child(3) {
+      border-bottom: 1px solid var(--light-text);
+    }
+  }
+
+  .checkbox-wrapper {
+    color: var(--dark-grey);
+    margin: 32px 0;
+
+    width: 100%;
+
+    position: relative;
+
+    span {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .btn-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .btn {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark-grey);
+
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+
+      width: 25%;
+
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--yellow);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid var(--light-text);
+    }
+  }
+}
