@@ -1,9 +1,10 @@
 <div class="card">
   <span [ngClass]="{
     opened: card.opened
-  }">{{ card.opened ? 'Aberto' : 'Fechado' }}</span>
+  }">{{ card.opened ? 'Aberto' : 'Fechado'}}</span>
   <h3>{{ card.title }}</h3>
-  <p>{{ card.content }}</p>
+  <p [innerHTML]="card.content"></p>
+  <div class="divider"></div>
   <ul>
     <img *ngIf="card.mask" [src]="'/assets/images/png/' + card.mask + '-mask.png'"/>
     <img *ngIf="card.towel" [src]="'/assets/images/png/' + card.towel + '-towel.png'"/>
